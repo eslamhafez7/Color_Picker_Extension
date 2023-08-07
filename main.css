@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500&family=Rubik:ital,wght@0,300;0,400;0,500;1,400;1,600;1,800&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+.popup {
+    width: 350px;
+}
+.popup :where(.picker, header, .all-colors, .all-colors .color) {
+    display: flex;
+    align-items: center;
+}
+.popup .picker {
+    padding: 30px;
+    justify-content: center;
+    background-color: #e3f2fd;
+}
+.picker #color-picker {
+    outline: none;
+    border: none;
+    color: #fff;
+    font-size: 1rem;
+    border-radius: 5px;
+    padding: 10px 20px;
+    background: #5372f0;
+    cursor: pointer;
+}
+.picked-colors {
+    margin: 10px 15px;
+}
+.picked-colors.hide {
+    display: none;
+}
+.picked-colors header {
+    justify-content: space-between;
+}
+.picked-colors header .title {
+    font-size: 1rem;
+}
+.picked-colors .clear-all {
+    font-size: 0.9rem;
+    color: #5372f0;
+    cursor: pointer;
+}
+.all-colors {
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
+.all-colors .color {
+    width: calc(100% / 3);
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.all-colors .color .rect {
+    width: 22px;
+    height: 22px;
+    border-radius: 5px;
+    display: block;
+    margin-right: 8px;
+}
+.all-colors .color .value {
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}

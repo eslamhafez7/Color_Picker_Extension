@@ -1,0 +1,4 @@
+- JSON file => {
+    - This file that specifies the metadata and behavior of a Chrome Exetention.
+    - It is required for all Chrome extensions and must must be placed in the root directory.
+  }
